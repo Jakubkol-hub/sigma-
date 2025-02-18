@@ -1,5 +1,5 @@
 @echo off
-title Midnight Cleaner
+title Meta.ud Cleaner
 taskkill /f /im FortniteClient-Win64-Shipping_EAC.exe
 taskkill /f /im FortniteClient-Win64-Shipping.exe
 taskkill /f /im FortniteClient-Win64-Shipping_BE.exe
@@ -21,7 +21,7 @@ taskkill /f /im Agent.exe
 taskkill /f /im Client.exe
 Sc stop EasyAntiCheat
 cls
-echo. {$} - [ Midnight Cleaner ] - {$} ($) PRESS ANY KEY TO START CLEANING
+echo. {$} - [ Meta.ud Cleaner ] - {$} ($) PRESS ANY KEY TO START CLEANING
 pause>nul
 for /f "delims=: tokens=*" %%A in ('findstr /b ::: "%~f0"') do @echo(%%A
 del "C:\Windows\prefetch\CONHOST.EXE-0C6456FB.pf",
@@ -1207,7 +1207,7 @@ timeout /3 >nul
 md %systemdrive%\Users\%username%\AppData\Local\FortniteGame\Saved\Config\WindowsClient >nul
 bitsadmin.exe /transfer "GameUserSettings.ini" https://cdn.discordapp.com/attachments/811055626444079135/824670477721010246/GameUserSettings.ini "%systemdrive%\Users\%username%\AppData\Local\FortniteGame\Saved\Config\WindowsClient"
 cls
-echo [ ! ] Midnight Cleaner [ BETA ]
+echo [ ! ] Meta.ud Cleaner [ BETA ]
 echo [ + ] Finished Cleaning
 echo [ / ] Press any key to continue back to the main menu
 pause >nul
